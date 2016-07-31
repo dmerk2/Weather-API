@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather API</title>
+</head>
+<body>
+
+	<!-- retrieved data will be dumped here -->
+	<div class='city'></div>
+	<div class='wind'></div>
+	<div class='humidity'></div>
+	<div class='temp'></div>
+
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript">
+	
+	//This is our API Key
+	var APIKey = "b1434cc4b4c38161215a67768fa4f514";
+
+	//here we are building the URL we neeed to query the database
+	var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=" + APIKey;
+
+	//than AJAX call
+	$.ajax({url: queryURL, method: 'GET'})
+
+	.done(function(response){
+		//log queryURL
+		console.log(queryURL);
+		//log resulting object
+		console.log(response);
+		//transfer to HTML
+		$(".city").html("City: " + response.name)
+		$('.wind').html("Wind Speed: " + response.wind.speed)	    
+		$('.temp').html("Temperature: " + response.main.temp + "K")
+
+	});
+
+</script>
+</body>
+</html>
