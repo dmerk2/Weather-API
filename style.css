@@ -1,0 +1,11 @@
+body{
+	background-image:url('earth.jpg');
+	background-size:cover;
+}
+
+.container{
+	font-size: 50px;
+	color: red;
+	text-align:center;
+	margin-top: 25%;
+}

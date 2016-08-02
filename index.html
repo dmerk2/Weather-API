@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Weather API</title>
 </head>
 <body>
 
+  <div class='container'>
 	<!-- retrieved data will be dumped here -->
 	<div class='city'></div>
 	<div class='wind'></div>
 	<div class='humidity'></div>
 	<div class='temp'></div>
+  </div>
 
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">
@@ -30,7 +33,8 @@
 		console.log(response);
 		//transfer to HTML
 		$(".city").html("City: " + response.name)
-		$('.wind').html("Wind Speed: " + response.wind.speed)	    
+		$('.wind').html("Wind Speed: " + response.wind.speed + " mph")	    
+		$('.humidity').html('Humidity: ' + response.humidity)
 		$('.temp').html("Temperature: " + response.main.temp + "K")
 
 	});
