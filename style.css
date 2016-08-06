@@ -1,6 +1,6 @@
 body{
-	background-image:url('earth.jpg');
-	background-size:cover;
+	background-image:url('earth.jpg'); 
+	background-size: cover;
 }
 
 .container{
@@ -9,3 +9,4 @@ body{
 	text-align:center;
 	margin-top: 25%;
 }
+

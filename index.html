@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<title>Weather API</title>
 </head>
 <body>
@@ -13,6 +15,12 @@
 	<div class='humidity'></div>
 	<div class='temp'></div>
   </div>
+
+  <!-- input box -->
+  <input type="text" class="form-control" placeholder="Check anywhere!">
+
+  <!--submit button-->
+  <input class="btn btn-default" type="submit" value="Submit">
 
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">
@@ -31,14 +39,15 @@
 		console.log(queryURL);
 		//log resulting object
 		console.log(response);
+
 		//transfer to HTML
 		$(".city").html("City: " + response.name)
 		$('.wind').html("Wind Speed: " + response.wind.speed + " mph")	    
-		$('.humidity').html('Humidity: ' + response.humidity)
+		$('.humidity').html('Humidity: ' + response.main.humidity)
 		$('.temp').html("Temperature: " + response.main.temp + "K")
-
 	});
 
 </script>
+
 </body>
 </html>
