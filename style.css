@@ -1,12 +1,16 @@
 body{
-	background-image:url('earth.jpg'); 
+	background-image:url('http://openweathermap.org/themes/demo/assets/vendor/mosaic/img/owm_weather.png'); 
 	background-size: cover;
 }
 
 .container{
 	font-size: 50px;
-	color: red;
+	font-weight: bold;
+	color: black;
 	text-align:center;
-	margin-top: 25%;
+	margin-top: 20%;
 }
 
+.input{
+	text-align: center;
+}
