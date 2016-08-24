@@ -1,6 +1,10 @@
 body{
 	background-image:url('http://openweathermap.org/themes/demo/assets/vendor/mosaic/img/owm_weather.png'); 
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
 }
 
 .container{
@@ -11,6 +15,7 @@ body{
 	margin-top: 20%;
 }
 
-.input{
+.checkBox{
+	float:center;
 	text-align: center;
 }
