@@ -22,7 +22,7 @@
   <input type="text" placeholder="Check anywhere!">
 
   <!--submit button-->
-  <input class="btn btn-default" type="submit">
+  <input class="btn btn-default" type="submit" onclick()>
 </div>
 
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -51,8 +51,18 @@
 		$(".city").html("City: " + response.name)
 		$('.wind').html("Wind Speed: " + response.wind.speed + " MPH")	    
 		$('.humidity').html('Humidity: ' + response.main.humidity + " %")
-		$('.temp').html("Temperature: " + Math.round(F) + "F")
+		$('.temp').html("Temperature: " + Math.round(F) + " F")
 	});
+
+$(document).ready(function (){
+	$('.container').slideDown('slow')
+});
+
+function onclick() {
+	$('submit').click('text')
+};
+
+
 
 	// document.getElementById('submit').onsubmit = function() {
  //      window.location = 'http://api.openweathermap.org/data/2.5/weather?' + document.getElementById('queryURL').value;
