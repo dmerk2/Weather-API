@@ -1,5 +1,5 @@
 body{
-	background-image:url('http://openweathermap.org/themes/demo/assets/vendor/mosaic/img/owm_weather.png'); 
+	background-image:url('http://cdn.pcwallart.com/images/colorful-universe-background-wallpaper-2.jpg'); 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body{
 .container{
 	font-size: 50px;
 	font-weight: bold;
-	color: black;
+	color: white;
 	text-align:center;
 	margin-top: 20%;
 }
